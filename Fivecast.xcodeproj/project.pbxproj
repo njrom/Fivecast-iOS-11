@@ -12,6 +12,7 @@
 		6830E9E0215D14E500B97F00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6830E9DE215D14E500B97F00 /* Main.storyboard */; };
 		6830E9E2215D14E600B97F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6830E9E1215D14E600B97F00 /* Assets.xcassets */; };
 		6830E9E5215D14E600B97F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6830E9E3215D14E600B97F00 /* LaunchScreen.storyboard */; };
+		68C8FF2A215D18E90095E38C /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C8FF29215D18E90095E38C /* WeatherDataModel.swift */; };
 		7A2DDEBC0600CB9F7BF7541D /* Pods_Fivecast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5E3C38BF642A746AB76D88 /* Pods_Fivecast.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,8 @@
 		6830E9E1215D14E600B97F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6830E9E4215D14E600B97F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6830E9E6215D14E600B97F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68C8FF29215D18E90095E38C /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
+		68C8FF2B215D1C460095E38C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9D5E3C38BF642A746AB76D88 /* Pods_Fivecast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fivecast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE48536D1550B67829F47076 /* Pods-Fivecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fivecast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fivecast/Pods-Fivecast.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +55,7 @@
 		6830E9CE215D14E500B97F00 = {
 			isa = PBXGroup;
 			children = (
+				68C8FF2B215D1C460095E38C /* README.md */,
 				6830E9D9215D14E500B97F00 /* Fivecast */,
 				6830E9D8215D14E500B97F00 /* Products */,
 				0AAF3B2790D82957E2313A45 /* Pods */,
@@ -73,8 +77,8 @@
 				6830E9ED215D150800B97F00 /* View */,
 				6830E9EC215D14F300B97F00 /* Model */,
 				6830E9EE215D150F00B97F00 /* Controller */,
-				6830E9EF215D152600B97F00 /* Supporting Files */,
 				6830E9E1215D14E600B97F00 /* Assets.xcassets */,
+				6830E9E6215D14E600B97F00 /* Info.plist */,
 			);
 			path = Fivecast;
 			sourceTree = "<group>";
@@ -82,6 +86,7 @@
 		6830E9EC215D14F300B97F00 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				68C8FF29215D18E90095E38C /* WeatherDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -102,14 +107,6 @@
 				6830E9DA215D14E500B97F00 /* AppDelegate.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		6830E9EF215D152600B97F00 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6830E9E6215D14E600B97F00 /* Info.plist */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C8F921CE49AF939F33711A82 /* Frameworks */ = {
@@ -194,16 +191,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Fivecast/Pods-Fivecast-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -218,15 +211,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Fivecast-checkManifestLockResult.txt",
 			);
@@ -244,6 +233,7 @@
 			files = (
 				6830E9DD215D14E500B97F00 /* ViewController.swift in Sources */,
 				6830E9DB215D14E500B97F00 /* AppDelegate.swift in Sources */,
+				68C8FF2A215D18E90095E38C /* WeatherDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
